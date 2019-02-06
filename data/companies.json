@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Kerluke, Blick and Brekke",
+    "industry": "Real Estate Investment Trusts",
+    "market_cap": "$8.15B",
+    "sector": "Consumer Services",
+    "url": "https://hubpages.com"
+  },
+  {
+    "id": 2,
+    "title": "Rogahn, Prosacco and Walsh",
+    "industry": "Major Banks",
+    "market_cap": "n/a",
+    "sector": "Finance",
+    "url": "http://artisteer.com"
+  },
+  {
+    "id": 3,
+    "title": "Oberbrunner, Jacobs and Kshlerin",
+    "industry": "Computer Software: Prepackaged Software",
+    "market_cap": "$1.65B",
+    "sector": "Technology",
+    "url": "https://washingtonpost.com"
+  },
+  {
+    "id": 4,
+    "title": "Ondricka Inc",
+    "industry": "Major Pharmaceuticals",
+    "market_cap": "$681.44M",
+    "sector": "Health Care",
+    "url": "https://naver.com"
+  },
+  {
+    "id": 5,
+    "title": "Price, Dicki and Yundt",
+    "industry": "Apparel",
+    "market_cap": "$237.5M",
+    "sector": "Consumer Non-Durables",
+    "url": "https://cargocollective.com"
+  },
+  {
+    "id": 6,
+    "title": "Gulgowski LLC",
+    "industry": "Office Equipment/Supplies/Services",
+    "market_cap": "$4.82B",
+    "sector": "Miscellaneous",
+    "url": "https://theglobeandmail.com"
+  },
+  {
+    "id": 7,
+    "title": "McGlynn LLC",
+    "industry": "n/a",
+    "market_cap": "n/a",
+    "sector": "n/a",
+    "url": "http://tamu.edu"
+  },
+  {
+    "id": 8,
+    "title": "Schaden, Armstrong and O'Kon",
+    "industry": "Other Consumer Services",
+    "market_cap": "$431.87M",
+    "sector": "Consumer Services",
+    "url": "http://youtu.be"
+  },
+  {
+    "id": 9,
+    "title": "Baumbach LLC",
+    "industry": "n/a",
+    "market_cap": "$62M",
+    "sector": "n/a",
+    "url": "https://elpais.com"
+  },
+  {
+    "id": 10,
+    "title": "Murray, Graham and Heller",
+    "industry": "Hospital/Nursing Management",
+    "market_cap": "$1.1B",
+    "sector": "Health Care",
+    "url": "https://eepurl.com"
+  }
+]

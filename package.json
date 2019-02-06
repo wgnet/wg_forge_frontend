@@ -1,0 +1,27 @@
+{
+  "name": "wg-forge-js-welcome",
+  "version": "1.0.0",
+  "description": "Starter project for test task Wargaming Forge JS",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --hot --colors --progress",
+    "build": "webpack --mode production --colors --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artur-code/wg-forge-js-welcome.git"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/artur-code/wg-forge-js-welcome/issues"
+  },
+  "homepage": "https://github.com/artur-code/wg-forge-js-welcome#readme",
+  "devDependencies": {
+    "express": "4.16.4",
+    "html-webpack-plugin": "3.2.0",
+    "webpack": "4.28.4",
+    "webpack-cli": "3.2.1",
+    "webpack-dev-server": "3.1.14"
+  }
+}
