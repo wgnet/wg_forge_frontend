@@ -1,8 +1,30 @@
-// this is an example of improting data from JSON
-import 'orders' from '../data/orders.json';
+import Table from './components/table.js';
+
+import orders from '../data/orders.json';
+import users from '../data/users.json';
+import companies from '../data/companies.json';
+
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default (function () {
-    // YOUR CODE GOES HERE
-    // next line is for example only
-    document.getElementById("app").innerHTML = "<h1>Hello WG Forge</h1>";
+  const app = document.getElementById('app');
+
+  const container = document.createElement('div');
+  container.classList.add('container-fluid');
+  app.appendChild(container);
+
+  const table = new Table([
+    'Transaction ID',
+    'User Info',
+    'Order Date',
+    'Order Amount',
+    'Card Number',
+    'Card Type',
+    'Location'
+  ], container);
+
+  orders.forEach(v => {
+    table.addRow(v);
+  });
 }());
