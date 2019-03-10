@@ -18,7 +18,7 @@ module.exports = {
     open: true,
     port: 9000,
     before: function(app, server) {
-      app.use("/api", express.static(path.join(__dirname, "data")));
+      app.use("/api", express.static(path.join(__dirname, "data_1")));
     }
   }
 };

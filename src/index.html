@@ -3,8 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <title>WG Forge Test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <div id="app"></div>
+    <section class="bg-dark text-light position-relative">
+        <div id="app">
+            <div class="container ">
+                <div class="row justify-content-center align-items-start  min-vh-100">
+                    <h1 class="header">Test table</h1>
+                     <table class="data_1 w-100">
+                        <thead class="data_1__header border-bottom bg-secondary">
+                            <tr>
+                                <th class="text-center">Search:</th>
+                                <th><input class="w-10" type="text" id="search"></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr class="data_1__row_header text-center">
+                                <th class="row__item" id="transaction">Transaction ID</th>
+                                <th class="row__item" id="user-info">User Info</th>
+                                <th class="row__item" id="order-date">Order Date</th>
+                                <th class="row__item" id="order-amount">Order Amount</th>
+                                <th class="row__item" id="card-number">Card Number</th>
+                                <th class="row__item" id="card-type">Card Type</th>
+                                <th class="row__item" id="location">Location</th>
+                            </tr>
+                            
+                        </thead>
+                        <tbody class="data_1__body" id="tbody">
+                            
+                        <!-- ...тут будут данные о заказах... -->
+                        </tbody>
+                     </table>
+                     <table class="static border-bottom bg-primary">
+                            <tr class="total-orders p-3 mb-2">
+                                    <td class="cell-name">Orders Count</td>
+                                    <td id="cell-value">11</td>
+                            </tr>
+                            <tr class="total-cost">
+                                    <td>Orders Total</td>
+                                    <td id="cost-value">$ 6722.72</td>
+                            </tr>
+                            <tr class="medium-value">
+                                    <td>Median Value</td>
+                                    <td id="medium-value">$ 593.72</td>
+                            </tr>
+                            <tr class="average-chack">
+                                    <td>Average Check</td>
+                                    <td>$ 611.16</td>
+                            </tr>
+                            <tr class="average-chack_female">
+                                    <td>Average Check (Female)</td>
+                                    <td>$ 395.18</td>
+                            </tr>
+                            <tr class="average-chack_male">
+                                    <td>Average Check (Male)</td>
+                                    <td>$ 692.15</td>
+                            </tr>  
+                    </table>
+                     
+                </div>
+            </div>
+        </div>
+        
+    </section>
 </body>
 </html>
+
