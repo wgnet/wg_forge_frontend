@@ -17,7 +17,6 @@ export default function reDraw(data_1, data_2, data_3, key, array){
                 }
             })  
         })
-        // console.log(newData_1)
         drawRaw(newData_1, data_2, data_3)
     }
 }

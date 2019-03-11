@@ -2,12 +2,11 @@
 import orders from '../data/orders.json';
 import companies from '../data/companies.json';
 import users from '../data/users.json';
+import search from '../src/modules_js/search.js'
 
 import drawRaw from '../src/modules_js/drawRaw.js';
 import reDraw from '../src/modules_js/reDraw.js';
-
-
-// import closeBlock from '../src/modules_js/closeBlock.js';
+import resetFilter from '../src/modules_js/resetFilter.js';
 
 export default (function () {
     let usersList = users;
@@ -15,10 +14,10 @@ export default (function () {
     let companiesList = companies;
     let sortBlocks = document.querySelectorAll('.row__item');
     let sortBlocksLength = sortBlocks.length;
-
-    // function appendArrow(parentnode, ) {
-
-    // }
+   
+    let searchButton = document.querySelector('#search');
+    let searchInput = document.querySelector('#search-input');
+    let resetButton = document.querySelector('#reset');
 
     drawRaw(ordersList, usersList, companiesList);
 
@@ -54,17 +53,32 @@ export default (function () {
         
                 case 'location':
                     reDraw(ordersList, usersList, companiesList, 'order_country',ordersList)  
-
-                    break;
-        
-               
-            }
-            
+                break;
+            } 
         })
     }
-    
-    // reDraw(ordersList, usersList, companiesList, 'first_name', usersList)
 
-    console.log(ordersList)
+    searchButton.addEventListener('click', function(evt){
+        evt.preventDefault();
+        search(usersList,ordersList, companiesList)
+    }) 
     
+    searchInput.addEventListener('change', function(evt){
+        evt.preventDefault();
+        search(usersList, ordersList, companiesList)
+    })
+
+    searchInput.addEventListener('keydown', function(evt){
+        let enter = 13;
+        if(evt.keycode === enter) {
+            search(usersList, ordersList, companiesList)
+        }
+    })
+
+    resetButton.addEventListener('click', function(evt){
+        resetFilter(evt.target.parentNode, ':checked');
+        drawRaw(ordersList, usersList, companiesList);
+    })
+        
+    // console.log(ordersList)
 }());

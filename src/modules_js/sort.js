@@ -7,7 +7,7 @@ export default function sort(array, key) {
                 return a.total - b.total
             })
             break;
-            transaction_id
+
 
         case 'created_at':
             currentArray.sort(function(a, b){

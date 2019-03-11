@@ -48,6 +48,6 @@ export default function drawRaw(data_1, data_2, data_3){
         
     };
 
-    totalResult()
+    totalResult(data_1, data_2, data_3)
 }
 

@@ -11,59 +11,105 @@
         <div id="app">
             <div class="container ">
                 <div class="row justify-content-center align-items-start  min-vh-100">
-                    <h1 class="header">Test table</h1>
+                    <h1 class="header">Order table</h1>
                      <table class="data_1 w-100">
                         <thead class="data_1__header border-bottom bg-secondary">
-                            <tr>
-                                <th class="text-center">Search:</th>
-                                <th><input class="w-10" type="text" id="search"></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                            <tr class="data_1__row_header text-center">
-                                <th class="row__item" id="transaction">Transaction ID</th>
-                                <th class="row__item" id="user-info">User Info</th>
-                                <th class="row__item" id="order-date">Order Date</th>
-                                <th class="row__item" id="order-amount">Order Amount</th>
-                                <th class="row__item" id="card-number">Card Number</th>
-                                <th class="row__item" id="card-type">Card Type</th>
-                                <th class="row__item" id="location">Location</th>
-                            </tr>
+                        <tr>
+                            <th class="text-center" colspan="2">Search:</th>
+                            <th colspan="4"><input class="w-100" type="text" id="search-input"></th>
+                            <th colspan="1" ><input class="w-100 btn " type="button" id="search" value="search"></th>
+                        </tr>
+
+                        <tr>
+                            <th id="radioBox" colspan="7">
+                                <fieldset>
+                                    <label for="transaction_id">
+                                        <p>Transaction</p>
+                                    </label>
+                                    <input type="radio" name="search" id="transaction_id">
+
+                                    <label for="user_id">
+                                            <p>User Id</p>
+                                    </label>
+                                    <input type="radio" name="search" id="user_id">
+
+                                    <label for="first_name">
+                                        <p>User Name</p>
+                                    </label>
+                                    <input type="radio" name="search" id="first_name">
+                                    <label for="last_name">
+                                        <p>User Surname</p>
+                                    </label>
+                                    <input type="radio" name="search" id="last_name">
+
+                                    <label for="total">
+                                        <p>Total</p>
+                                    </label>
+                                    <input type="radio" name="search" id="total">
+
+                                    <label for="order_id">
+                                        <p>Order id</p>
+                                    </label>
+                                    <input type="radio" name="search" id="order_id">
+
+                                    <label for="country">
+                                        <p>Order id</p>
+                                    </label>
+                                    <input type="radio" name="search" id="country">
+                                    
+                                    <label for="card_type">
+                                        <p>Card Type</p> 
+                                    </label>
+                                    <input type="radio" name="search" id="card_type">
+
+                                    <label for="order_country">
+                                        <p>Location</p> 
+                                    </label>
+                                    <input type="radio" name="search" id="order_country">
+                                    <input type="button" class="reset btn" value="reset" id="reset">
+                                </fieldset>
+                            </th>
+                        </tr>
+
+                        <tr class="data_1__row_header text-center">
+                            <th id="transaction">Transaction ID</th>
+                            <th id="user-info">User Info</th>
+                            <th id="order-date">Order Date</th>
+                            <th id="order-amount">Order Amount</th>
+                            <th id="card-number">Card Number</th>
+                            <th id="card-type">Card Type</th>
+                            <th id="location">Location</th>
+                        </tr>
                             
                         </thead>
                         <tbody class="data_1__body" id="tbody">
                             
                         <!-- ...тут будут данные о заказах... -->
                         </tbody>
-                     </table>
-                     <table class="static border-bottom bg-primary">
-                            <tr class="total-orders p-3 mb-2">
-                                    <td class="cell-name">Orders Count</td>
-                                    <td id="cell-value">11</td>
-                            </tr>
-                            <tr class="total-cost">
-                                    <td>Orders Total</td>
-                                    <td id="cost-value">$ 6722.72</td>
-                            </tr>
-                            <tr class="medium-value">
-                                    <td>Median Value</td>
-                                    <td id="medium-value">$ 593.72</td>
-                            </tr>
-                            <tr class="average-chack">
-                                    <td>Average Check</td>
-                                    <td>$ 611.16</td>
-                            </tr>
-                            <tr class="average-chack_female">
-                                    <td>Average Check (Female)</td>
-                                    <td>$ 395.18</td>
-                            </tr>
-                            <tr class="average-chack_male">
-                                    <td>Average Check (Male)</td>
-                                    <td>$ 692.15</td>
-                            </tr>  
+                        <tr class="total-orders p-3 mb-2">
+                                <td class="cell-name" colspan="4">Orders Count</td>
+                                <td id="cell-value" colspan="3">11</td>
+                        </tr>
+                        <tr class="total-cost">
+                                <td colspan="4">Orders Total</td>
+                                <td id="cost-value" colspan="3">$ 6722.72</td>
+                        </tr>
+                        <tr class="medium-value">
+                                <td colspan="4">Median Value</td>
+                                <td id="medium-value" colspan="3">$ 593.72</td>
+                        </tr>
+                        <tr class="average-chack">
+                                <td colspan="4">Average Check</td>
+                                <td id="average-value" colspan="3">$ 611.16</td>
+                        </tr>
+                        <tr class="average-chack_female">
+                                <td colspan="4">Average Check (Female)</td>
+                                <td id="averageFemale-value" colspan="3">$ 395.18</td>
+                        </tr>
+                        <tr class="average-chack_male">
+                                <td colspan="4">Average Check (Male)</td>
+                                <td id="averageMale-value" colspan="3"> $ 692.15</td>
+                        </tr>  
                     </table>
                      
                 </div>
